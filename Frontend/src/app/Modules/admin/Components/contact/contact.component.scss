@@ -1,0 +1,36 @@
+.contact{
+      height: 92vh;
+      width: 100vw;
+      padding: 0;
+      margin: 0;
+}
+.options {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 2rem;
+      img{
+            width: 8rem;
+            height: 8rem;
+            border-radius: 50%;
+      }
+      h2{
+            font-weight: 400;
+      }
+}
+
+.myText{
+      font-weight: 600;
+      font-size: 1.4rem;
+      color: #783387;
+}
+
+.card{
+      border: 1px solid #783387;
+      width: 30%;
+      border-radius: 1rem;
+      background-color: rgb(218, 207, 238);
+      button{
+            width: 60%;
+      }
+}

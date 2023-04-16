@@ -1,0 +1,40 @@
+<div class="contact row" style=" margin-top: 4.8rem;" >
+      <div class="col col-3 d-flex justify-content-between row" style="height:100%; border-right: .5px solid rgb(204, 195, 195);" > 
+            <div style=" width: 100%;" class="pt-5 d-flex justify-content-center ">
+                  <div class="options">
+                       <img src="../../../../../assets/Photo.jpg" alt="" >
+                       <h2 style="text-transform: capitalize;">{{username}}</h2>
+                  </div>
+            </div>
+      </div>
+      <div class="col col-9">
+            <div style="width: 100%">
+                  <div class="d-flex flex-row justify-content-between ps-5 pt-4">
+                        <h2>Projects</h2>
+                        <div class="d-flex flex-row gap-3">
+                              <input #newproject style="border-radius: 1rem; border: 1px solid grey;" type="text">
+                              <button class="btn btn-primary" (click)="onSubmit()">Add New Project</button>
+                        </div>
+                  </div>
+                  <div style="width:100%" class="pt-4">
+                        <div *ngFor="let item of projectNames, index as i" class="d-flex flex-row flex-wrap gap-4 ps-5 pt-4" >
+                              
+                              <div class="p-3 card">
+                                    <div class="d-flex justify-content-center flex-column">
+                                          <h5 class="text-center pb-3 pt-2 fs-3" style="color:#783387" >{{item}}</h5>
+                                          <div class="d-flex flex-column gap-3 pb-4 align-items-center">
+                                                <button class="btn btn-outline-primary" (click)="find(item, i)" routerLink="../home">View</button>
+                                                <button class="btn btn-outline-danger" (click)="remove(item,i)">Remove</button>  
+                                          </div>
+                                    </div>
+                                    <div class="d-flex flex-row justify-content-around">
+                                          <p class="myText">Tasks: <span>8</span></p>
+                                          <p class="myText">Members : 2</p>
+                                    </div>
+                              </div>
+                        </div>
+                  </div>
+            </div>
+            <div></div>
+      </div>
+</div>

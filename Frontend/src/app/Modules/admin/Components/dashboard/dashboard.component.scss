@@ -1,0 +1,307 @@
+// .dashboard{
+//       height: 92vh;
+//       width: 100vw;
+//       padding: 0;
+//       margin: 0;
+//       background-color: rgb(249, 250, 254);
+// }
+// .left{
+//       background-color: rgb(158, 114, 206);
+// }
+// .options {
+//       display: flex;
+//       flex-direction: column;
+//       align-items: center;
+//       gap: 2rem;
+//       img{
+//             width: 8rem;
+//             height: 8rem;
+//             border-radius: 50%;
+//             border: 1px solid white;
+//       }
+//       h2{
+//             font-weight: 400;
+//             color: white;
+//       }
+// }
+
+// .myText{
+//       font-weight: 600;
+//       font-size: 1.2rem;
+//       // color: #783387;      
+// }
+
+// .card{
+//       text-transform: capitalize;
+//       width: 20%;
+//       border-radius: 1rem;
+//       background-color: rgb(133, 209, 179);
+//       color: white;
+//       .projectName{
+//             color: rgb(39, 73, 138);
+//             font-weight: 400;
+//       }
+//       .view{
+//             // color: rgb(20, 54, 74);
+//             color: white;
+//             background-color: transparent;
+//             border: 1px solid white;
+//       }
+//       .view:hover{
+//             background-color: green;
+//             color: white;
+//             border: none;
+//       }
+//       .remove{
+//             background-color: transparent;
+//             border: none;
+//       }
+//       .remove:hover{
+//             background-color: red;
+            
+//       }
+//       button{
+//             width: 50%;
+//             border-radius: 1rem;
+//             background-color: rgb(92, 190, 190);
+//       }
+// }
+// .projects{
+//       display: flex;
+//       flex-direction: row;
+//       flex-wrap: wrap;
+//       gap: 2rem;
+//       padding:2rem 0 0 4rem;
+// }
+
+
+body{
+      background-color: rgb(237,240,245);
+}
+.mobile-view-navbar{
+      gap: 5rem;
+}
+.image{
+      margin-top: 1rem;
+      width: 7rem;
+      width: 7rem;
+      border-radius: 2rem;     
+}
+
+.main{
+      height: 94vh;
+      padding: 2rem;
+      background-color: rgb(237,240,245)  ;
+}
+.stat{
+      padding: .5rem .5rem .5rem .8rem;
+      display: flex;
+      flex-direction: column;
+      background-color: rgb(43,61,105);
+      font-weight: 500;
+      border-radius: .5rem;
+      color: white;
+}
+.left{
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      background-color: white;
+      border-radius: 1rem;
+      padding-bottom: 1rem;
+}
+.left-1{
+      height: 25%;
+}
+.left-2{      
+      width: 66%;
+      padding-top: 3rem;
+      background-color: rgb(237,240,245);
+      border-radius: .8rem;
+}
+.left-2 ul{
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+}
+
+.left-2 ul li{
+      width: 100%;
+      padding-bottom: 1rem;
+      list-style: none;
+      font-size: 1.2rem;
+      font-weight: 500;
+      color: rgb(43,61,105);
+}
+.left-2 ul li:first-child{
+      color: rgb(43,61,105);
+}
+.left-2 ul li:hover{
+      font-size: 1.3rem;
+      cursor: pointer;
+      color: green;
+      border-left:5px solid green;
+}
+.middle{
+      width: 100%;
+      min-height: 50vh;
+      background-color: rgb(237,240,245);
+      display: flex;
+      justify-content: center;
+}
+.middle .middle-content{
+      height: auto;
+      width: 94%;
+      background-color: white;
+      border-radius: 1rem;
+}
+.middle-heading{
+      padding: 1rem 0 1rem 3rem;
+}
+.projects-list{
+      display: flex;
+      flex-direction: column;
+      padding-top: 1rem;
+      padding-left: 3rem;
+      padding-bottom: 1.6rem;
+      gap: 1rem;
+}
+
+.project{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+      background-color: rgb(237,240,245);
+      padding: .8rem;
+      width: 90%;
+      border-radius: 1rem;
+}
+
+// .project:first-of-type{
+//       background-color: orange;
+//       color: white;
+// }
+
+.add-project{    
+      padding-left: 3rem;
+      display: flex;
+      flex-direction: row;
+      width: 35%;     
+}
+
+.add-project form input{
+      width:40%;
+      border: 1px solid rgb(184, 187, 191);
+}
+
+.right{
+      height: 100%;
+      padding: 0 2rem ;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      background-color: white;
+      border-radius: 1rem;
+}
+
+.right-1{
+      padding:2rem;
+      height: 80%;
+}
+.right-bottom{
+      padding-top: 2rem;
+      display: flex;
+      flex-direction: column;
+      gap:2rem;
+}
+
+.showcase{
+      background-color: rgb(237,240,245);
+      padding:2rem 2rem;
+      border-radius: 1.4rem;
+}
+
+@media only screen and (max-width: 1200px) {
+      .mobile-view-navbar {
+            padding: 1rem 0 1rem 0;
+            gap:1rem;
+      }
+      .stat{
+            width: 40%;
+      }
+      .left-2{
+            height: 50%;
+      }
+      
+      .left-2 ul li{
+            padding-left: 3rem;
+      }
+
+      .middle{
+            padding-top: 2rem;
+            width: 100%;
+            min-height: 50vh;
+      }
+
+      .middle .middle-content{
+            padding-bottom: 2rem;
+            width: 100%;
+      }
+
+      .add-project{
+            padding: 1.4rem;
+      }
+
+      .right{
+            min-height: 80vh;
+            margin-top: 2rem;
+      }
+
+}
+
+
+@media only screen and (min-width: 1200px){
+      .main{
+            display: flex;
+            flex-direction: row;
+            height: 94vh;
+      }
+      .left{
+            width: 20%;
+            padding-top: 2rem;
+      }
+      
+      .stat{
+            width: 50%;
+            text-align: start;
+      }
+
+      .left-2{
+            margin-top: 2rem;
+            height: 60%;
+      }
+      .left-2 ul li{
+            padding-left: 1rem;
+      }
+      
+      .middle{
+            width: 60%;
+            padding-bottom: 1.5rem;
+      }
+
+      .right{
+            width: 20%;
+      }
+      
+      .right-bottom{
+            padding-top: 2rem;
+            display: flex;
+            flex-direction: column;
+            gap:2rem;
+      }
+      
+}     

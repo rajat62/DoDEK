@@ -1,0 +1,68 @@
+
+
+<div class="content-body container-fluid">
+      <div class="main row">
+            <div class="left" >
+                  <div class="left-1 mobile-view d-flex flex-column justify-content-center align-items-center gap-3" style="width:80%">
+                        
+                        <img class="image" src="../../../../../assets/Photo.jpg"/>
+                        <p class="fs-3" style="text-transform: capitalize;">{{username}}</p>
+                        <div class="d-flex flex-row gap-3 justify-content-center" style="width:100%">
+                              <div class="stat">
+                                    <p>Projects</p>
+                                    <span>{{projects}}</span></div>
+                              <div class="stat" style="background-color: rgb(237,240,245); color:black;">
+                                    <p>Active</p>
+                                    <span class="text-success">Yes</span>
+                              </div>
+                        </div>
+                  </div>
+                  <div class="left-2">
+                        <ul>
+                              <!-- <li> Dashboard </li> -->
+                              <li> Contact Us </li>
+                        </ul>
+                  </div>
+            </div>
+            <div class="middle">
+                  <div class="middle-content">
+                        <div class="middle-heading">
+                              <h4>Projects</h4>
+                        </div>      
+                        <div class="projects-list" *ngFor="let item of projectNames, index as i">
+                              
+                             <div class="project">
+                                    <p style="text-transform: capitalize;">{{item}}</p>
+                                    <button class="btn btn-outline-secondary" (click)="showAuthor(item,i)">Author</button>
+                                    <button class="btn btn-outline-secondary" (click)="showMembers(item,i)">Members</button>
+                                    <button class="btn btn-outline-secondary" (click)="remove(item,i)">Remove</button>
+                                    <button  class="btn btn-outline-secondary" (click)="find(item, i)" routerLink="../home">View</button>
+                              </div>
+                        </div>
+                        <div class="add-project">     
+                              
+                                    <input #newproject class="form-control me-2" type="text" placeholder="Add New" aria-label="Search">
+                                    <button class="btn btn-outline-success" (click)="onSubmit()">Add</button>
+                              
+                        </div>
+                  </div>
+            </div>
+            <div class="right">
+                  <div class="right-1">
+                        <div class="featured pb-3">
+                              <h6 class="fs-4">Featured Project</h6>
+                        </div>
+                        <div class="right-bottom">
+                              <div class="showcase">
+                                    <p>Movie App</p>
+                                    <button class="btn btn-outline-success"><a target='_blank'></a> Github</button>
+                              </div>
+                              <div class="showcase">
+                                    <p>Basic CRUD</p>
+                                    <button class="btn btn-outline-success">Github</button>
+                              </div>
+                        </div>
+                  </div>
+            </div>
+      </div>
+</div>
